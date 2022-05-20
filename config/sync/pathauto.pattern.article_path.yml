@@ -1,0 +1,14 @@
+uuid: 04f59837-94da-4c50-9d60-451b0d814295
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: article_path
+label: 'Article Path'
+type: 'canonical_entities:node'
+pattern: '/article/[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

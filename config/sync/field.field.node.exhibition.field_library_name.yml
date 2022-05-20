@@ -1,0 +1,21 @@
+uuid: 209fbd21-9d48-4fee-9773-dacfe4b2adcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_library_name
+    - node.type.exhibition
+  module:
+    - options
+id: node.exhibition.field_library_name
+field_name: field_library_name
+entity_type: node
+bundle: exhibition
+label: 'Library Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

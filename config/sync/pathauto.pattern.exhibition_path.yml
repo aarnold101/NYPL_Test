@@ -1,0 +1,22 @@
+uuid: 184f324d-7922-46b2-be91-3c7266807071
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: exhibition_path
+label: 'Exhibition Path'
+type: 'canonical_entities:node'
+pattern: '/exhibition/[node:title]'
+selection_criteria:
+  ebe8fdf4-e54d-463c-94c5-1ca9b7195c69:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: ebe8fdf4-e54d-463c-94c5-1ca9b7195c69
+    context_mapping:
+      node: node
+    bundles:
+      exhibition: exhibition
+selection_logic: and
+weight: -5
+relationships: {  }

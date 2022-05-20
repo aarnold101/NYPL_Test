@@ -1,0 +1,17 @@
+uuid: a9cdb274-9cdd-4f95-b0ed-6be285aeb4fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Exhibition
+type: exhibition
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

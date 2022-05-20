@@ -1,0 +1,30 @@
+uuid: 4417ba8a-89e6-4375-9cc6-8300625eab46
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_library_name
+field_name: field_library_name
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '125th Street Library'
+      label: '125th Street Library'
+    -
+      value: '53rd Street Library'
+      label: '53rd Street Library'
+    -
+      value: 'Stephen A. Schwarzman Building'
+      label: 'Stephen A. Schwarzman Building'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
