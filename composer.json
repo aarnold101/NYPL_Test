@@ -19,6 +19,7 @@
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-recommended": "^9.3",
         "drupal/core-vendor-hardening": "^9.3",
+        "drupal/image_widget_crop": "^2.3",
         "drupal/media_library_edit": "^2.2",
         "drupal/memcache": "^2.3",
         "drupal/pathauto": "^1.10",
@@ -45,6 +46,9 @@
             "locations": {
                 "web-root": "web/"
             }
+        },
+        "file-mapping": {
+            "[web-root]/sites/development.services.yml": false
         },
         "installer-paths": {
             "web/core": [
