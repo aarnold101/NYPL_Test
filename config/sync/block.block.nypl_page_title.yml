@@ -1,0 +1,20 @@
+uuid: eced24b3-a50d-4245-80be-6c55a15be46d
+langcode: en
+status: false
+dependencies:
+  theme:
+    - nypl
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: nypl_page_title
+theme: nypl
+region: sidebar_first
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

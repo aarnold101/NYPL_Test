@@ -1,0 +1,22 @@
+uuid: 3fa55028-c4ae-4f19-a973-95800bb4eb4c
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - nypl
+_core:
+  default_config_hash: y0bXRvKYQQKkf_RVxA3aOPGpIfKKsDOzzrWYCgjxJ9Y
+id: nypl_breadcrumbs
+theme: nypl
+region: breadcrumb
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

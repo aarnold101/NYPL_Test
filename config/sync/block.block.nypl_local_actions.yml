@@ -1,0 +1,20 @@
+uuid: 605670b3-99ed-4233-8eeb-d45babe611c8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nypl
+_core:
+  default_config_hash: XRdb8LpbArVA6CpuuEZxzi50JIdjsJaCCZ5o3fH0Blk
+id: nypl_local_actions
+theme: nypl
+region: highlighted
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

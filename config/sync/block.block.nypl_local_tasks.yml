@@ -1,0 +1,22 @@
+uuid: 7df0bb41-eb50-41de-8c00-e6d04a3786fd
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nypl
+_core:
+  default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
+id: nypl_local_tasks
+theme: nypl
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

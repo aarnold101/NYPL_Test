@@ -1,0 +1,23 @@
+uuid: 067a5412-0b07-4ab7-894e-4fb014b2b671
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - nypl
+_core:
+  default_config_hash: jQ-C8l3dJPqYCGST1e-kSjR14PDP4wq-iFbp8dMFcRo
+id: nypl_search
+theme: nypl
+region: sidebar_first
+weight: -6
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: visible
+  provider: search
+  page_id: node_search
+visibility: {  }

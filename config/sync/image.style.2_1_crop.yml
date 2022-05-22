@@ -1,0 +1,18 @@
+uuid: 4fa27a5b-7372-4cef-9e5a-d6b7b9dd1688
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.2_1
+  module:
+    - crop
+name: 2_1_crop
+label: '2:1 Crop'
+effects:
+  e0fe220c-7d7b-41cc-adb9-8d566dbdd5b5:
+    uuid: e0fe220c-7d7b-41cc-adb9-8d566dbdd5b5
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '2_1'
+      automatic_crop_provider: null

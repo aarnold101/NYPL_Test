@@ -1,0 +1,22 @@
+uuid: 42795e5e-415f-4ddc-aa3e-25ced3589c22
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - nypl
+_core:
+  default_config_hash: '-laWx8WA-ikiIEH3NJQ0hVbjqk3iEuBms91LB0B4IQU'
+id: nypl_help
+theme: nypl
+region: sidebar_first
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: f34c0104-4e48-4368-80cb-73343079152f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nypl
+_core:
+  default_config_hash: kigu8pTxXt1qGR2NJ5HHdC4G2G1wsDrIjLPKBT5wUBc
+id: nypl_content
+theme: nypl
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

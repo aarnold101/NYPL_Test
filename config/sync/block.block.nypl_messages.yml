@@ -1,0 +1,22 @@
+uuid: c87789c3-b698-4a95-a123-23199b085ee5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nypl
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: nypl_messages
+theme: nypl
+region: highlighted
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }
