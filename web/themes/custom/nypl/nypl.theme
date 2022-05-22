@@ -1,0 +1,14 @@
+<?php
+
+function nypl_preprocess_field__node__field_date_range__exhibition(&$variables) {
+	$date_start = strtotime($variables['items'][0]['content']['start_time']['#markup']);
+	$date_end = strtotime($variables['items'][0]['content']['end_time']['#markup']);
+	$date_now = strtotime("now");
+	if ( ($date_start < $date_now) && ($date_end > $date_now) ) {
+		$variables['items'][0]['content']['start_time']['#markup'] = "Now";
+	} else {
+		$variables['items'][0]['content']['start_time']['#markup'] = date('M j, Y', $date_start);
+	}
+		$variables['items'][0]['content']['end_time']['#markup'] = date('M j, Y', $date_end);
+
+}

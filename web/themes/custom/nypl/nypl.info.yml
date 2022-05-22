@@ -1,0 +1,8 @@
+name: NYPL Theme
+type: theme
+description: 'Custom Theme for Test Website.'
+package: Other
+core_version_requirement: ^8 || ^9
+libraries:
+  - nypl/global-styling
+base theme: olivero
