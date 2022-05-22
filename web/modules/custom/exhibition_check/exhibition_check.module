@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * Implements hook_validate().
+ */
+
+function exhibition_check_validate($element, $form_state) {
+
+kint('Hi there');
+//    form_error($element, t('Only weekdays are allowed.'));
+}
+
+/**
+ * Implements hook_entity_bundle_field_info_alter().
+ */
+use Drupal\Core\Entity\EntityTypeInterface;
+
+function exhibition_check_entity_bundle_field_info_alter(&$fields, EntityTypeInterface $entity_type, $bundle) {
+	if ($bundle === 'exhibition') {
+  		if (!empty($fields['field_date_range'])) {
+    			$fields['field_date_range']->addConstraint('WeekdayCheck');
+  		}
+	}
+}

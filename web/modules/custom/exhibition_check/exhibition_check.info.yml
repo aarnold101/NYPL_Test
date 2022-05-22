@@ -1,0 +1,5 @@
+name: Exhibition Form Validator
+type: module
+description: Tests exhibition form to validate proper data input
+core_version_requirement: ^8.8 || ^9
+package: Custom
