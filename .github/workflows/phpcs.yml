@@ -6,9 +6,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Install PHP Code Sniffer
+      - name: Install PHP CodeSniffer
         run: |
+          cd .github/codesniff
           composer require --dev dealerdirect/phpcodesniffer-composer-installer
           composer require --dev drupal/coder
       - name: Check coding standards
-        run: vendor/bin/phpcs
+        run: |
+          cd .github/codesniff
+          vendor/bin/phpcs
