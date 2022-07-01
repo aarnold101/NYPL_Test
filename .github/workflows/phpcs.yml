@@ -11,6 +11,7 @@ jobs:
           cd .github/codesniff
           composer require --dev dealerdirect/phpcodesniffer-composer-installer
           composer require --dev drupal/coder
+          vendor/bin/phpcs -s --config-set installed_paths vendor/drupal/coder/coder_sniffer,vendor/sirbrillig/phpcs-variable-analysis,vendor/slevomat/coding-standard
       - name: Check coding standards
         run: |
           cd .github/codesniff
