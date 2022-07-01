@@ -16,7 +16,7 @@ class WeekdayCheckConstraint extends Constraint {
 
   /**
    * The default violation message.
-   *
+   * 
    * @var string
    */
   public $message = 'You may only select weekdays for the start and end.';
