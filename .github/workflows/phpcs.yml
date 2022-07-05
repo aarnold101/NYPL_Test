@@ -1,3 +1,4 @@
+# This file adapted from https://jet.dev/blog/coding-standards-phpcs-drupal-github-actions/
 name: PHP Code Sniffer
 on: pull_request
 jobs:
@@ -11,6 +12,8 @@ jobs:
           cd .github/codesniff
           composer require --dev dealerdirect/phpcodesniffer-composer-installer
           composer require --dev drupal/coder
+          # The below line should not be necessary, in theory. But there is a bug in the latest drupal/coder module, apparently.
+          # See https://www.drupal.org/project/coder/issues/3262291 & https://www.drupal.org/project/drupalci_testbot/issues/3283978
           vendor/bin/phpcs -s --config-set installed_paths vendor/drupal/coder/coder_sniffer,vendor/sirbrillig/phpcs-variable-analysis,vendor/slevomat/coding-standard
       - name: Check coding standards
         run: |
